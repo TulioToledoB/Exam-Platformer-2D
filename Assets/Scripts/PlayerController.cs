@@ -3,7 +3,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Animator animator;
-
+     [SerializeField] private KeyCode attackKey = KeyCode.C;
+    [SerializeField] private KeyCode hurtKey = KeyCode.V;
+    [SerializeField] private KeyCode dieKey = KeyCode.X;
     void Start()
     {
         animator = GetComponent<Animator>();
